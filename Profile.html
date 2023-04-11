@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erik Li</title>
+    <link rel="stylesheet" type="text/css" href="profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 style="font-size: 12vw" id="bigtitle"><a onmouseover="showTitle(about)" onmouseout="hideTitle(about)" class="letters" id="E" href="About.html">E</a><a onmouseover="showTitle(resume)" onmouseout="hideTitle(resume)" class="letters" id="R" href="resume-slash-cv.pdf">R</a><a href="comingsoon.html" onmouseover="showTitle(projects)" onmouseout="hideTitle(projects)" class="letters" id="I">I</a><a href="comingsoon.html" onmouseover="showTitle(artwork)" onmouseout="hideTitle(artwork)" class="letters" id="K">K</a><a id="letters"> </a><a href="comingsoon.html" onmouseover="showTitle(photo)" onmouseout="hideTitle(photo)" class="letters" id="L">L</a><a href="comingsoon.html" onmouseover="showTitle(blog)" onmouseout="hideTitle(blog) "class="letters" id="I">I</a><button onclick="location.href='index.html'" type="button" id="backbutton"><span style="font-size: 1vw;" class="material-symbols-outlined">home</span></button>
+    </h1>
+    <div style="font-size: 3.5vw" id="tabs">
+      <a class="category" id="about">
+        About
+      </a>
+      <a class="category" id="resume">
+        Resume
+      </a>
+      <a class="category" id="projects">
+        Projects
+      </a>
+      <a class="category" id="artwork">
+        Artwork
+      </a>
+      <a class="category" id="photo">
+        Photography
+      </a>
+      <a class="category" id="blog">
+        Blog
+      </a>
+      <a class="category" id="beginning">
+        Try Hovering Over...
+      </a>
+    </div>
+    <script>
+      hideTitle(about);
+      hideTitle(resume);
+      hideTitle(projects);
+      hideTitle(artwork);
+      hideTitle(photo);
+      hideTitle(blog);
+      function showTitle(x){
+        x.style.opacity=1;
+        hideTitle(beginning); 
+      }
+      function hideTitle(x){
+        x.style.opacity=0;
+      }
+    </script>
+  </body>
+</html>
